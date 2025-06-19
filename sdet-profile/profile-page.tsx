@@ -240,7 +240,7 @@ export default function Component() {
               <div className="flex-1 space-y-4">
                 <div>
                   <h1 className="text-4xl font-bold text-gray-900 mb-2">Vishnu AV</h1>
-                  <h2 className="text-2xl text-blue-600 font-semibold mb-4">Senior SDET Manager</h2>
+                  <h2 className="text-2xl text-blue-600 font-semibold mb-4">SDET Manager|Scrum Master|AI Driven Quality Engineer</h2>
                   <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
                     QA Engineering Manager with 14 years of hands-on and leadership experience in building
                     high-performance SDET teams, architecting automation frameworks, and delivering scalable quality
