@@ -215,8 +215,8 @@ export default function Component() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/resume/Vishnu_AV_Resume.pdf"
-    link.download = "Vishnu_AV_Resume.pdf"
+    link.href = "/resume/VISHNU_AV_Staff_SDET_14Years.pdf"
+    link.download = "VISHNU_AV_Staff_SDET_14Years.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
