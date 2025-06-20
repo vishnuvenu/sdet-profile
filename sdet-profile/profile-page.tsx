@@ -215,8 +215,8 @@ export default function Component() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/resume/Vishnu_AV_Resume.pdf"
-    link.download = "Vishnu_AV_Resume.pdf"
+    link.href = "/resume/VISHNU_AV_Staff_SDET_14Years.pdf"
+    link.download = "VISHNU_AV_Staff_SDET_14Years.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -231,7 +231,7 @@ export default function Component() {
           <CardContent className="relative p-8">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
               <Avatar className="w-32 h-32 border-4 border-white shadow-lg">
-                <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Profile" />
+                <AvatarImage src="/images/image.png" alt="Vishnu AV Profile" />
                 <AvatarFallback className="text-2xl font-bold bg-gradient-to-br from-blue-500 to-purple-500 text-white">
                   VA
                 </AvatarFallback>
@@ -240,7 +240,7 @@ export default function Component() {
               <div className="flex-1 space-y-4">
                 <div>
                   <h1 className="text-4xl font-bold text-gray-900 mb-2">Vishnu AV</h1>
-                  <h2 className="text-2xl text-blue-600 font-semibold mb-4">Senior SDET Manager</h2>
+                  <h2 className="text-2xl text-blue-600 font-semibold mb-4">SDET Manager|Scrum Master|AI Driven Quality Engineer</h2>
                   <p className="text-lg text-gray-600 leading-relaxed max-w-3xl">
                     QA Engineering Manager with 14 years of hands-on and leadership experience in building
                     high-performance SDET teams, architecting automation frameworks, and delivering scalable quality
@@ -267,6 +267,17 @@ export default function Component() {
                     <Calendar className="w-4 h-4" />
                     <span>14+ Years Experience</span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <Linkedin className="w-4 h-4" />
+                    <a
+                      href="https://www.linkedin.com/in/venuvis89"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-600 transition-colors"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -276,11 +287,41 @@ export default function Component() {
                   Download Resume
                 </Button>
                 <div className="flex gap-2">
-                  <Button variant="outline" size="icon">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => window.open("https://www.linkedin.com/in/venuvis89", "_blank")}
+                    title="LinkedIn Profile"
+                  >
                     <Linkedin className="w-4 h-4" />
                   </Button>
-                  <Button variant="outline" size="icon">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => window.open("https://github.com/venuvis89", "_blank")}
+                    title="GitHub Profile"
+                  >
                     <Github className="w-4 h-4" />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => window.open("https://twitter.com/venuvis89", "_blank")}
+                    title="Twitter Profile"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={() => window.open("https://medium.com/@venuvis89", "_blank")}
+                    title="Medium Profile"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 0 016.77-6.82A6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                    </svg>
                   </Button>
                 </div>
               </div>
